@@ -105,14 +105,12 @@ d3.json("Data/us-states.json").then((geojsonS,err1)=> {
 
                                                         legend.onAdd = function (map) {
                                                             this._div = L.DomUtil.create('div', 'legend');
-                                                            this._div.innerHTML = "<h4>Global Swapper Density</h4>" + '<b>' + "Hover over the map" + '</b></br>';
+                                                            this._div.innerHTML = "<h4>Global Swapper Density</h4>" + '<b>' + "Hover over the map & click" + '</b></br>';
                                                             return this._div;
                                                         };
 
                                                         legend.update = function(name){
-
-                                                            this._div.innerHTML = "<h4>" + name +"</h4>" + '<b>' + "Hover over the map" + '</b></br>';
-
+                                                            this._div.innerHTML = "<h4>" + name +"</h4>" + '<b>' + "Hover over the map & click" + '</b></br>';
                                                         }
 
                                                         legend.addTo(map);
@@ -228,69 +226,69 @@ d3.json("Data/us-states.json").then((geojsonS,err1)=> {
                                                                     mapName = "United States Swapper Density";
                                                                 }
 
-                                                                if (clickedFeature.properties["name"] === "Germany") {
+                                                                else if (clickedFeature.properties["name"] === "Germany") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapG);
                                                                     map.setView([50.87516727695286, 10.321618203560337], 6);
                                                                     mapName = "Germany Swapper Density";
                                                                 }
 
-                                                                if (clickedFeature.properties["name"] === "United Kingdom") {
+                                                                else if (clickedFeature.properties["name"] === "United Kingdom") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapUK);
                                                                     map.setView([54.7, -3.9497794060550078], 6);
                                                                     mapName = "United Kingdom Swapper Density";
                                                                 }
 
-                                                                if (clickedFeature.properties["name"] === "Canada") {
+                                                                else if (clickedFeature.properties["name"] === "Canada") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapC);
                                                                     map.setView([60.197933154914715, -95.21289755195478], 4);
                                                                     mapName = "Canada Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "Spain") {
+                                                                else if (clickedFeature.properties["name"] === "Spain") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapSp);
                                                                     map.setView([39.837815467519896, -1.8992355616652372], 6);
                                                                     mapName = "Spain Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "Ireland") {
+                                                                else if (clickedFeature.properties["name"] === "Ireland") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapI);
                                                                     map.setView([53.4, -8.062445351062129], 7);
                                                                     mapName = "Ireland Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "Australia") {
+                                                                else if (clickedFeature.properties["name"] === "Australia") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapA);
                                                                     map.setView([-26.49540274412037, 135.4213558576099], 4);
                                                                     mapName = "Australia Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "New Zealand") {
+                                                                else if (clickedFeature.properties["name"] === "New Zealand") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapZ);
                                                                     map.setView([-41.429304098452704, 173.43089576636285], 6);
                                                                     mapName = "New Zealand Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "Netherlands") {
+                                                                else if (clickedFeature.properties["name"] === "Netherlands") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapN);
                                                                     map.setView([52.17436142105231, 5.5], 7);
                                                                     mapName = "Netherlands Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "Norway") {
+                                                                else if (clickedFeature.properties["name"] === "Norway") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapNO);
                                                                     map.setView([65.33424208771788, 13.018297738986297], 5);
                                                                     mapName = "Norway Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "Switzerland") {
+                                                                else if (clickedFeature.properties["name"] === "Switzerland") {
                                                                     map.removeLayer(worldMap);
                                                                     map.addLayer(stateMapSW);
                                                                     map.setView([46.7, 8.084404661788334], 8);
                                                                     mapName = "Switzerland Swapper Density";
                                                                 }
-                                                                if (clickedFeature.properties["name"] === "Trinidad and Tobago") {
+                                                                else if (clickedFeature.properties["name"] === "Trinidad and Tobago") {
                                                                     map.removeLayer(worldMapT);
                                                                     map.addLayer(stateMap);
                                                                     map.setView([10.627166668126312, -61.15205817572308], 9);
