@@ -3,7 +3,7 @@
         height: 750px;
         opacity: 1;
         background-color: #ffffff;
-        border: 5px solid #F4C4D2FF;
+        /*border: 5px solid #F4C4D2FF; */
     }
 
     .info {
@@ -26,20 +26,8 @@
     }
 
     .legend {
-        line-height: 18px;
-        color: #555;
-    }
-    .legend i {
-        width: 18px;
-        height: 18px;
-        float: left;
-        margin-right: 8px;
-        opacity: 0.7;
-    }
-
-    .legend {
         position: absolute;
-        padding: 6px 8px;
+        padding: 10px 8px;
         font: 20px/22px Arial, Helvetica, sans-serif;
         background: white;
         background: rgba(255,255,255,.8);
@@ -51,6 +39,8 @@
         color: #aadad7;
     }
     .legend h4 {
+        font: 30px/22px Arial, Helvetica, bold, sans-serif;
+        padding: 6px 8px;
         margin: 0 0 5px;
         color: #cf9c3f;
     }
