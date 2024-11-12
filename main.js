@@ -299,8 +299,8 @@ d3.json("Data/us-states.json").then((geojsonS,err1)=> {
                                                                     mapName = "Switzerland Swappers";
                                                                 }
                                                                 else if (clickedFeature.properties["name"] === "Trinidad and Tobago") {
-                                                                    map.removeLayer(worldMapT);
-                                                                    map.addLayer(stateMap);
+                                                                    map.removeLayer(worldMap);
+                                                                    map.addLayer(stateMapT);
                                                                     map.setView([10.627166668126312, -61.15205817572308], 9);
                                                                     mapName = "Trinidad & Tobago Swappers";
                                                                 }
