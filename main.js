@@ -35,8 +35,8 @@ d3.json("Data/us-states.json").then((geojsonS,err1)=> {
 
                                                         var map = L.map('map', {
                                                             center: [52.906402418294526, -47.96448321837776], // Centered over the US
-                                                            zoom: 3,
-                                                            minZoom: 2,
+                                                            zoom: 2,
+                                                            minZoom: 1,
                                                             maxZoom: 9,
                                                             attributionControl: false,
                                                             zoomControl: true
