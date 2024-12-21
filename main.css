@@ -28,7 +28,7 @@
     .legend {
         position: absolute;
         padding: 10px 8px;
-        font: 20px/22px Arial, Helvetica, sans-serif;
+        font: 15px/15px Arial, Helvetica, sans-serif;
         background: white;
         background: rgba(255,255,255,.8);
         box-shadow: 0 0 15px rgba(0,0,0,0.2);
@@ -39,7 +39,7 @@
         color: #aadad7;
     }
     .legend h4 {
-        font: 30px/22px Arial, Helvetica, bold, sans-serif;
+        font: 22px/20px Arial, Helvetica, bold, sans-serif;
         padding: 6px 8px;
         margin: 0 0 5px;
         color: #cf9c3f;

@@ -1,5 +1,10 @@
 {
   "type": "FeatureCollection",
+  "properties": {
+          "x": [60.197933154914715],
+          "y": [-95.21289755195478],
+          "zoom": [3]
+    },
   "features": [
     {
       "type": "Feature",
