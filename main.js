@@ -38,7 +38,7 @@ d3.json("Data/RegionMapAll.json").then((geojson,err1)=> {
                 map.removeLayer(worldMap);
                 map.setView([x, y], zoom);
 
-                if (stateName === "United States of America"){
+                if (stateName === "United States of America" || stateName === "Canada"){
                     stateMap = L.geoJson(geojsonS, {
                         style: state_styleLarge,
                         onEachFeature: onEachFeature
@@ -167,11 +167,11 @@ d3.json("Data/RegionMapAll.json").then((geojson,err1)=> {
         }
 
         function getColorSmall(d) {
-            return d > 6 ? '#815b13' :
-                d > 5 ? '#a87a25' :
-                    d > 4 ? '#cf9c3f' :
-                        d > 3 ? '#ddb262' :
-                            d > 2 ? '#e6ca93' :
+            return d >= 6 ? '#815b13' :
+                d >= 5 ? '#a87a25' :
+                    d >= 4 ? '#cf9c3f' :
+                        d >= 3 ? '#ddb262' :
+                            d >= 2 ? '#e6ca93' :
                                 d >= 1 ? '#f8e6c4' :
                                     d > 0 ? 'rgb(195,195,195)' :
                                         'rgba(195,195,195,0.25)';
