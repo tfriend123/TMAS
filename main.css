@@ -18,11 +18,11 @@
         pointer-events: none; /* Allows mouse events to pass through */
         z-index: 1000;
         transition: transform 0.05s ease-in-out;
-        color: #aadad7;
+        color: #668b8b;
     }
     .info h4 {
         margin: 0 0 5px;
-        color: #b24363;
+        color: #BA4466;
     }
 
     .legend {
@@ -36,11 +36,11 @@
         pointer-events: none; /* Allows mouse events to pass through */
         z-index: 1000;
         transition: transform 0.05s ease-in-out;
-        color: #aadad7;
+        color: #BA4466;
     }
     .legend h4 {
         font: 22px/20px Arial, Helvetica, bold, sans-serif;
         padding: 6px 8px;
         margin: 0 0 5px;
-        color: #cf9c3f;
+        color: #333333;
     }
